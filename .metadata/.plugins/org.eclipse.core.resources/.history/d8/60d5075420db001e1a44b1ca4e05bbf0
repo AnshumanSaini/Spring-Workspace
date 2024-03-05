@@ -1,0 +1,18 @@
+package com.hughes.repository;
+
+import java.util.List;
+
+import com.hughes.model.Aadhar;
+
+public interface AadharRepository {
+	public List<Aadhar> findAll();
+
+	public int create(Aadhar a);
+
+	public int read(Aadhar a);
+
+	public int update(Aadhar a);
+
+	public int delete(Aadhar a);
+
+}

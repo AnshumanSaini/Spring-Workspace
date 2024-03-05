@@ -1,0 +1,43 @@
+package com.hughes.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.hughes.model.Aadhar;
+import com.hughes.repository.AadharRepository;
+
+@Service
+public class AadharServiceImp implements AadharService {
+	@Autowired
+	AadharRepository arepo;
+
+	@Override
+	public List<Aadhar> findAll(Aadhar a) {
+		return arepo.findAll(a);
+	}
+
+	@Override
+	public int create(Aadhar a) {
+		return arepo.create(a);
+	}
+
+	@Override
+	public int read(Aadhar a) {
+		return arepo.read(a);
+	}
+
+	@Override
+	public int update(Aadhar a) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int delete(Aadhar a) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

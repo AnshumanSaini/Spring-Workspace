@@ -1,0 +1,8 @@
+package com.hughes.repository;
+
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface EmployeeRepository {
+
+}

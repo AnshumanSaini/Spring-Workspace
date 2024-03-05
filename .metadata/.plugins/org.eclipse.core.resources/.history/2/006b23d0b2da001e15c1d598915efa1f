@@ -1,0 +1,22 @@
+package org.edu.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import or.edu.model.Students;
+import or.edu.repository.StudentsRepositoryImpl;
+
+@Service
+public class StudentsServiceImpl implements StudentsService {
+
+	@Autowired
+	StudentsRepository srepo;
+	
+	public List<Students> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

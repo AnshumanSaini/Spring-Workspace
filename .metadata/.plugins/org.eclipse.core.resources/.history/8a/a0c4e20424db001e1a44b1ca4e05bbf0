@@ -1,0 +1,38 @@
+package com.hughes;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.hughes.model.Aadhar;
+
+@SpringBootApplication
+public class SpringBootAssignJdbcApplication implements CommandLineRunner {
+
+	@Autowired
+	Aadhar a;
+	public static void main(String[] args) {
+		SpringApplication.run(SpringBootAssignJdbcApplication.class, args);	
+	}
+	
+	@Override
+	public void run(String... args)
+	{
+		Aadhar a=new Aadhar();
+		//Implementing the Create Operation
+		a.setAadhar_no(100);
+		a.setAddress("Bhopal");
+		a.setIncome(20000);
+		a.setMobile_no("123456");
+		a.setName("Bob");
+		a.setState("MP");
+		
+		//Implementing the Read Operation
+		
+		//Implementing the Update Operation
+		
+		//Implementing the Delete Operation
+	}
+
+}

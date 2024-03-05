@@ -1,0 +1,39 @@
+package org.edu.service;
+
+import java.util.List;
+import java.util.Optional;
+
+import org.edu.model.Students;
+import org.edu.repository.StudentsRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class StudentsServiceImpl implements StudentsService {
+
+	@Autowired
+	StudentsRepository srepo;
+
+	public List<Students> findAll() {
+		return srepo.findAll();
+	}
+	
+	public int save(Students std) {
+		return srepo.save(std);
+	}
+	
+	public int delete(int id)
+	{
+		return srepo.delete(id);
+	}
+	
+	public int update(Students std) {
+		return srepo.update(std);
+	}
+	
+	public Optional<Students> findById(Students std)
+	{
+		return srepo.findById(std);
+	}
+
+}

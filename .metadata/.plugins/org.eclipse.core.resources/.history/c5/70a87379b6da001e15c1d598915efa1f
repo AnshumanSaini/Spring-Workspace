@@ -1,0 +1,11 @@
+package or.edu.repository;
+
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import or.edu.model.Students;
+
+public interface StudentsRepository {
+	List<Students> findAll();
+}

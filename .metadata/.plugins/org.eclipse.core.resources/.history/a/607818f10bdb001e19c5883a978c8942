@@ -1,0 +1,12 @@
+package com.hughes.model;
+
+public class Aadhar {
+	
+	private int aadhar_no;
+	private String name;
+	private String mobile_no;
+	private String address;
+	private int income;
+	private String state;
+
+}

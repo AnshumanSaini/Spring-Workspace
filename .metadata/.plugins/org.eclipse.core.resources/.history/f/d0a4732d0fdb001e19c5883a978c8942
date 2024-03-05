@@ -1,0 +1,45 @@
+package com.hughes.repository;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.stereotype.Repository;
+
+import com.hughes.model.Aadhar;
+
+@Repository
+public class AadharRepositoryImp implements AadharRepository {
+
+	@Autowired
+	JdbcTemplate jdbctemplate;
+	@Override
+	public List<Aadhar> findAll(Aadhar a) {
+		
+	}
+
+	@Override
+	public int create(Aadhar a) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int read(Aadhar a) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int update(Aadhar a) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int delete(Aadhar a) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

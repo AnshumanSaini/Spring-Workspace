@@ -1,0 +1,5 @@
+package or.edu.repository;
+
+public interface StudentsRepository {
+
+}

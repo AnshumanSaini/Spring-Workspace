@@ -1,0 +1,6 @@
+package com.hughes.serviceimpl;
+import com.hughes.service.MyService;
+
+public class MyServiceImpl implements MyService {
+
+}

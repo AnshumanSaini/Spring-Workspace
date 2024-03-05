@@ -1,0 +1,18 @@
+package com.hughes.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.hughes.serviceimpl.MyServiceImpl;
+
+@Controller
+public class UserController {
+	@Autowired
+	MyServiceImpl mimpl;
+	
+	@RequestMapping("/getemployees")
+	public String getEmployees() {
+		
+	}
+
+}

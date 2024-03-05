@@ -1,0 +1,13 @@
+package com.hughes.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.hughes.repository.AadharRepository;
+
+@Service
+public class AadharServiceImp {
+	@Autowired
+	AadharRepository arepo;
+
+}

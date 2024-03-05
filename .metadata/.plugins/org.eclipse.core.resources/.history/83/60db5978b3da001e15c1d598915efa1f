@@ -1,0 +1,20 @@
+package or.edu.repository;
+
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import or.edu.model.Students;
+
+@Repository
+public class StudentsRepositoryImpl implements StudentsRepository {
+
+	
+	public List<Students> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}
